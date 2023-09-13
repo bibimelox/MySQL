@@ -14,7 +14,7 @@ READ
 - Mesma coisa do SHOW (não tem muita utilidade).
 
 
- DELETE
+DELETE
 
 4. DROP DATABASE nome_bd;
 - Exclui o banco de dados;
