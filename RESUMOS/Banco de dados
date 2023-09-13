@@ -1,0 +1,21 @@
+CREATE
+
+1. CREATE DATABASE nome_bd;
+- Cria um banco de dados;
+- Pode ser usado antes do nome, um [IF EXISTS] para não tentar criar um nome que já exite.
+
+
+READ
+
+1. SHOW DATABASES;
+- Verifca o banco de dados.
+
+2. SELECT database();
+- Mesma coisa do SHOW (não tem muita utilidade).
+
+
+ DELETE
+
+4. DROP DATABASE nome_bd;
+- Exclui o banco de dados;
+- Também pode usar o [IF EXISTS] para não tentar excluir um banco que não existe.
