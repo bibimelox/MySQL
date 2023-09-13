@@ -1,0 +1,64 @@
+CREATE
+
+1. CREATE TABLE nome_tabela (
+  coluna tipo_dados constrains,
+  pode adicionar + uma usando ,
+  );
+
+- Deve dar o comando de usar algum BD;
+- Pode ser usado antes do nome, um [IF EXISTS] para não tentar criar um nome que já exite.
+- Exemplo de criação de tabelas.
+
+  CREATE TABLE IF NOT EXISTS tbl_Livro (
+  ID_Livro smallint AUTO_INCREMENT PRIMARY KEY,
+  Nome_Livro VARCHAR(50) NOT NULL,
+  ISBN VARCHAR(30) NOT NULL,
+  ID_Autor smallint NOT NULL,
+  Data_Pub DATE NOT NULL,
+  Preco_Livro decimal NOT NULL
+  );
+
+
+READ
+
+1. SHOW TABLES;
+- Mostra as tabelas existentes.
+
+2. SELECT * FROM nome_tbl;
+- Mostra os INSERT da tabela.
+
+3. SELECT MAX(nome_coluna)
+   FROM nome_tbl;
+- Mostra o mais atual incremento.
+
+
+INSERT
+
+1. INSERT INTO nome_tbl (Nome) VALUES ('Nome escohido');
+- Insere informações para a tabela;
+- exemplo de insert:
+
+  INSERT INTO tbl_teste_incremento (Nome) VALUES ('Ana');
+  INSERT INTO tbl_teste_incremento (Nome) VALUES ('Maria');
+  INSERT INTO tbl_teste_incremento (Nome) VALUES ('Julia');
+  INSERT INTO tbl_teste_incremento (Nome) VALUES ('Joana');
+
+
+EDIT
+
+1. ALTER TABLE nome_tbl
+   AUTO_INCREMENT = valor escolhido;
+- Altera o valor de incremento dos próximos resgistros da tabela.
+
+
+DELETE
+
+1. DROP TABLE nome_tbl;
+- Exclui o banco de dados;
+
+2. DELETE FROM nome_tbl
+- Exclui todos os registros da tabela.
+
+3. DELETE FROM nome_tbl
+  WHERE tipo do registro= 'registro';
+- Exclui os dados escolhidos.
