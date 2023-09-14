@@ -1,0 +1,42 @@
+Tipos de Dados
+
+INT: Números inteiros entre -2,147,483,648 e 2,147,483,648.
+
+TINYINT: Números inteiros de -128 a 127.
+
+SMALLINT: Números inteiros de -32768 a 32767.
+
+MEDIUMINT: Números inteiros de -8388608 a 8388607.
+
+BIGINT: Números inteiros entre -9,223,372,036,854,775,808 e 9,223,372,036,854,775,807.
+
+DECIMAL(M,D): Ponto decimal com M dígitos no total (precisão) e D casas decimais (escala);
+            O padrão é 10,0;
+            M vai até 65 e D até 30.
+
+FLOAT(M,D): Ponto flutuante com precisão M e escala D;
+            O padrão é 10,2;
+            D até 24.
+
+CHAR(M): String que ocupa tamanho fixo entre 0 e 255 caracteres.
+
+BOOL / BOOLEAN: Valores binários 0/1;
+                Na verdade, é um alias para o tipo TINYINT.
+
+VARCHAR: String de tamanho variável, até 65535 caracteres
+
+BLOB/ MEDIUMBLOB/ TINYBLOB: Campo com tamanho máximo de 65535 caracteres binários;
+                            'Binary Large Objects', são usados para armazenar grandes quantidades de dados como as imagens.
+
+MEDIUMTEXT: Permite armazenar até 16.777.215 caracteres.
+
+LONGTEXT: Permite armazenar até 4.294.967.295 caracteres.
+
+DATE: Uma data de 01/01/1000 a 31/12/9999, no formato YYYY-MM-DD.
+
+TIME: Hora apenas, no formato HH:MM:SS
+
+YEAR(M): Ano nos formatos de 2 ou 4 dígitos;
+        Se forem 2 (YEAR(2)), ano vai de 1970 a 2069;
+        Para 4 (YEAR(4)), ano vai de 1901 a 2155;
+        O padrão é 4.

@@ -1,4 +1,4 @@
-CONSTRAINS
+﻿CONSTRAINS
 
 1. NOT NULL
 - Impõe a uma coluna a não aceitar valores NULL;

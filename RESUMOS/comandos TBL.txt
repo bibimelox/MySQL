@@ -1,0 +1,87 @@
+﻿CREATE
+
+CREATE TABLE nome_tabela (
+  coluna tipo_dados constrains,
+  pode adicionar + uma usando ,
+  );
+
+- Deve dar o comando de usar algum BD;
+- Pode ser usado antes do nome, um [IF EXISTS] para não tentar criar um nome que já exite.
+- Exemplo de criação de tabelas.
+
+  CREATE TABLE IF NOT EXISTS tbl_Livro (
+  ID_Livro smallint AUTO_INCREMENT PRIMARY KEY,
+  Nome_Livro VARCHAR(50) NOT NULL,
+  ISBN VARCHAR(30) NOT NULL,
+  ID_Autor smallint NOT NULL,
+  Data_Pub DATE NOT NULL,
+  Preco_Livro decimal NOT NULL
+  );
+
+
+READ
+
+SHOW TABLES;
+- Mostra as tabelas existentes.
+
+DESCRIBE nome_tabela;
+- Descreve as tabelas.
+
+SELECT * FROM nome_tbl;
+- Mostra os INSERT da tabela.
+
+SELECT MAX(nome_coluna)
+   FROM nome_tbl;
+- Mostra o mais atual incremento.
+
+
+INSERT
+
+INSERT INTO nome_tbl (coluna1, coluna2,...)
+VALUES ('valor1, valor2,...');
+- Insere dados em uma tabela;
+- exemplo de insert:
+
+  INSERT INTO tbl_autores (id_autor, nome_autor, sobrenome_autor)
+  VALUES  (1, 'Bibi', 'Melox'),
+	        (2, 'Murilo', 'Nunes'),
+	        (3, 'Jean', 'Pierre'),
+	        (4, 'Eduardo', 'Cloffe'),
+	        (5, 'Fabiana', 'Melo');
+
+EDIT
+
+ALTER TABLE nome_tbl +
+
+AUTO_INCREMENT = valor escolhido;
+- Altera o valor de incremento dos próximos resgistros da tabela.
+
+ADD ID_Autor tipo_dados constrains;
+- Adiciona uma coluna.
+
+ALTER COLUMN nome_coluna constrains;
+- Altera o tipo_dados de uma coluna.
+
+ADD PRIMARY KEY (nome_coluna, pode ser +1)
+- Adiciona uma chave primária a(s) coluna(s)
+
+
+DELETE
+
+DROP TABLE nome_tbl;
+- Exclui o banco de dados;
+
+DELETE FROM nome_tbl
+- Exclui todos os registros da tabela.
+
+DELETE FROM nome_tbl
+  WHERE tipo do registro= 'registro';
+- Exclui os dados escolhidos.
+
+ALTER TABLE nome_tbl
+DROP COLUMN nome_coluna;
+- Exclui uma coluna.
+
+ALTER TABLE nome_tbl
+DROP PRIMARY KEY;
+- Exclui uma chave primária.
