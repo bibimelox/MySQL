@@ -1,4 +1,4 @@
-CONSULTAS SIMPLES
+CONSULTAS
 
 SELECT nome_coluna FROM nome_tabela;
 - Retorna a coluna inteira da tabela.
@@ -6,3 +6,17 @@ SELECT nome_coluna FROM nome_tabela;
 SELECT * FROM nome_tabela;
 - *: Significa todas as colunas;
 - Retorna todas as colunas.
+
+SELECT coluna1, coluna2 FROM nome_tbl;
+- Retorna mais de uma coluna.
+
+SELECT * FROM nome_tabela
+ORDER BY nome_coluna ASC ou DESC;
+- Retorna todas as colunas em ordem:
+Ascendente (alfabetica);
+Descendente (invertida).
+
+SELECT coluna1, coluna2 FROM nome_tbl
+ORDER BY nome_coluna ASC ou DESC;
+- Retorna mais de uma coluna;
+- Ordenada pela coluna e ordem escolhida.
