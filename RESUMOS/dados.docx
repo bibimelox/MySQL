@@ -21,7 +21,7 @@ FLOAT(M,D): Ponto flutuante com precisão M e escala D;
 CHAR(M): String que ocupa tamanho fixo entre 0 e 255 caracteres.
 
 BOOL / BOOLEAN: Valores binários 0/1;
-                Na verdade, é um alias para o tipo TINYINT.
+                Na verdade, é um álias para o tipo TINYINT.
 
 VARCHAR: String de tamanho variável, até 65535 caracteres
 

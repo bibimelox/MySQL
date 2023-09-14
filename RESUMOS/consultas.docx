@@ -1,0 +1,8 @@
+CONSULTAS SIMPLES
+
+SELECT nome_coluna FROM nome_tabela;
+- Retorna a coluna inteira da tabela.
+
+SELECT * FROM nome_tabela;
+- *: Significa todas as colunas;
+- Retorna todas as colunas.

@@ -71,12 +71,16 @@ DELETE
 DROP TABLE nome_tbl;
 - Exclui o banco de dados;
 
-DELETE FROM nome_tbl
+DELETE FROM nome_tbl (sem where)
 - Exclui todos os registros da tabela.
 
 DELETE FROM nome_tbl
   WHERE tipo do registro= 'registro';
 - Exclui os dados escolhidos.
+
+TRUNCATE TABLE nome_tabela;
+- Exclui todos os registros da tabela;
+- Igual o DELETE sem WHERE.
 
 ALTER TABLE nome_tbl
 DROP COLUMN nome_coluna;
@@ -85,3 +89,4 @@ DROP COLUMN nome_coluna;
 ALTER TABLE nome_tbl
 DROP PRIMARY KEY;
 - Exclui uma chave primária.
+
