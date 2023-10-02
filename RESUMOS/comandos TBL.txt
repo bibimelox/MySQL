@@ -90,3 +90,9 @@ ALTER TABLE nome_tbl
 DROP PRIMARY KEY;
 - Exclui uma chave primária.
 
+
+EXPORT
+
+REPLATE (nome_coluna, "tipo atual", "tipo mudança") AS nome_escolhido_coluna
+- Muda o tipo de pontuação das informações dsa coluna;
+- Serve para não dar erros ao exportar a tabela.

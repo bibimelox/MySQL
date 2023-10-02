@@ -16,6 +16,6 @@ READ
 
 DELETE
 
-4. DROP DATABASE nome_bd;
+1. DROP DATABASE nome_bd;
 - Exclui o banco de dados;
 - Também pode usar o [IF EXISTS] para não tentar excluir um banco que não existe.
