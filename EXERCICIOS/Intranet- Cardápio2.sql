@@ -31,8 +31,8 @@ av.cadData,
 av.cadUserR AS "User Avaliou",
 av.cadTipo,
 CASE
-WHEN av.cadTipo = 1 THEN "Avaliação do menu"
-WHEN av.cadTipo = 0 THEN "Avaliação do preparo"
+WHEN av.cadTipo = 1 THEN "Avaliação do preparo"
+WHEN av.cadTipo = 0 THEN "Avaliação do menu"
 END AS cadTipo,
 av.cadRate AS "Nota",
 REPLACE(REPLACE(REPLACE(av.cadComentario, ",", "-"), ";", "-"), "\r\n", " ") AS Comentários
