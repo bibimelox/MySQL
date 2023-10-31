@@ -1,10 +1,12 @@
+SELECT * FROM intranetdb.tabgrhstaff;
+
 SELECT DISTINCT
 cadID AS "ID",
 cadNome AS "Nome",
 cadDepto AS "Depto",
 cadCargo AS "Cargo",
-cadAdmissao AS "Admissao",
-cadDemissao AS "Demissao",
+cadAdmissao AS "Admissão",
+cadDemissao AS "Demissão",
 cadEntrada AS "Data Inicial",
 cadSaida AS "Data Final",
 cadNascimento AS "Nascimento",
@@ -61,7 +63,6 @@ cadCTPS AS "CTPS Nº",
 cadCTPSEmissao AS "CTPS Emissão",
 cadPIS AS "PIS Nº",
 cadPISCadastro AS "PIS Cadastro",
-#CADCRC
 cadCNH AS "CNH",
 cadCNHCategoria AS "CNH Cat.",
 cadCNHVencimento AS "CNH Vecto",
@@ -82,9 +83,6 @@ WHEN cadStatus = 0 THEN "Ativo"
 WHEN cadStatus = 2 THEN "Desligado"
 WHEN cadStatus = 4 THEN "Transferido"
 WHEN cadStatus = 6 THEN "Fora do Sistema"
-END AS Status
+END AS Status,
+cadStatusAvaliacao AS "Avaliações"
 FROM tabgrhstaff ;
-
-
-
-SELECT * FROM intranetdb.tabgrhstaff;

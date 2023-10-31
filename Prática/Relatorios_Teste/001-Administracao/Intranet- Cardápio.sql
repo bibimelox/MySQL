@@ -29,7 +29,6 @@ SELECT DISTINCT
 card.cadID AS "ID Cardapio",
 av.cadData,
 av.cadUserR AS "User Avaliou",
-av.cadTipo,
 CASE
 WHEN av.cadTipo = 1 THEN "Avaliação do preparo"
 WHEN av.cadTipo = 0 THEN "Avaliação do menu"
